@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Facelook</title>
+    <link rel="shortcut icon" type="x-icon" href="facebook.png">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="masterStyle.css">
+
+    <link rel="stylesheet" href="indexStyle.css">
+
+    <link rel="stylesheet" href="navBarStyle.css">
+
+    <script src="https://kit.fontawesome.com/cd1902b406.js"></script>
+
+  </head>
+
+  <body>
+    <header class="nav-bar">
+      <nav>
+
+        <section class="nav-bar-left-tabs">
+          <i class="fa-brands fa-facebook-f" id="nav-bar-icon" title="test"></i>
+
+          <form action="" class="nav-bar-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search on Facelook" name="q">
+          </form>
+        </section>
+
+        <section class="nav-bar-middle-tabs">
+          <i onclick="ViewModeButton('fa-solid fa-house')" data-title="test" class="fa-solid fa-house" id="nav-bar-middle-tabs-selected"></i>
+          <i onclick="ViewModeButton('fa-solid fa-user-group')" data-title="test" class="fa-solid fa-user-group"></i>
+          <i onclick="ViewModeButton('fa-solid fa-display')" data-title="test" class="fa-solid fa-display"></i>
+          <i onclick="ViewModeButton('fa-solid fa-store')" data-title="test" class="fa-solid fa-store"></i>
+          <i onclick="ViewModeButton('fa-solid fa-gamepad')" data-title="test" class="fa-solid fa-gamepad"></i>
+        </section>
+
+        <section class="nav-bar-right-tabs">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-brands fa-facebook-messenger" id="nav-bar-more-than-0-msg"></i>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-user"></i>
+        </section>
+
+      </nav>
+    </header>
+
+    <section class="page-content">
+
+      <div class="left-page-content">
+        <ul class="account-list">
+          <li>
+            <span>
+              <i class="fa-solid fa-user"></i>
+            </span>
+
+            <p> account name</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-user-group"></i>
+            </span>
+
+            <p> friends</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </span>
+
+            <p> most recent</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-people-group"></i>
+            </span>
+
+            <p> groups</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-store"></i>
+            </span>
+
+            <p> marketplace</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-display"></i>
+            </span>
+
+            <p> watch</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </span>
+
+            <p> view more</p>
+          </li>
+        </ul>
+
+        <ul class="games-list">
+          <li>
+          <h1>your shortcuts</h1>
+          </li>
+
+          <li>
+            <span>
+            </span>
+
+            <p>8 ball pool</p>
+          </li>
+
+          <li>
+            <span>
+            </span>
+
+            <p>agar.io</p>
+          </li>
+
+          <li>
+            <span>
+            </span>
+
+            <p>candy crush</p>
+          </li>
+
+          <li>
+            <span>
+            </span>
+
+            <p>pixel gun</p>
+          </li>
+
+          <li>
+            <span>
+            </span>
+
+            <p>temple run</p>
+          </li>
+
+          <li>
+            <span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </span>
+            
+            <p> view more</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <section class="middle-page-first">
+
+          <div>
+            <ul>
+              <li onclick="CategoryButton('middle-page-category-btn1')" class="middle-page-category-btn1" id="middle-page-first-selected">
+                <i class="fa-solid fa-book-open"></i>
+                <p>stories</p>
+              </li>
+
+              <li onclick="CategoryButton('middle-page-category-btn2')" class="middle-page-category-btn2">
+                <i class="fa-solid fa-film"></i>
+                <p>reels</p>
+              </li>
+
+              <li onclick="CategoryButton('middle-page-category-btn3')" class="middle-page-category-btn3">
+                <i class="fa-solid fa-film"></i>
+                <p>camera</p>
+              </li>
+            </ul>
+          </div>
+
+          <section class="middle-page-stories">
+            <ul>
+
+              <li class="middle-page-stories-create-story">
+                <section>
+                  <div><i class="fa-regular fa-plus"></i></div>
+                  <p>create a story</p>
+                </section>
+              </li>
+
+              <li></li>
+
+              <li></li>
+
+              <li></li>
+              
+            </ul>
+          </section>
+
+        </section>
+        
+        <section>
+        </section>
+      </div>
+
+      <div class="right-page-content">
+        <ul>
+            <ul class="right-page-content-friends">
+
+              <li class="right-page-content-master-title">
+                <h1>social</h1>
+              </li>
+
+              <li class="right-page-content-friends-title">
+                <h1>friends</h1>
+                <section>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="fa-solid fa-video"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </section>
+              </li>
+
+              <li class="right-page-content-panel" id="social-state-online">
+                <section class="right-page-content-friends-image"></section>
+                <p>Elisa Holder</p>
+              </li>
+
+              <li class="right-page-content-panel" id="social-state-online">
+                <section class="right-page-content-friends-image"></section>
+                <p>Kendra Crane</p>
+              </li>
+
+              <li class="right-page-content-panel" id="social-state-online">
+                <section class="right-page-content-friends-image"></section>
+                <p>Liam O'Doherty</p>
+              </li>
+
+              <li class="right-page-content-panel" id="social-state-offline">
+                <section class="right-page-content-friends-image"></section>
+                <p>Lina Boyd</p>
+              </li>
+
+            </ul>
+          </li>
+
+          <li>
+            <ul class="right-page-content-group">
+              <li class="right-page-content-group-title">
+                <h1>group conversations</h1>
+                <section>
+
+                </section>
+              </li>
+
+              <li class="right-page-content-panel">
+                <section class="right-page-content-group-image"></section>
+                <p>The Boys <span>4+ online</span></p>
+              </li>
+
+              <li class="right-page-content-panel">
+                <section class="right-page-content-group-image"></section>
+                <p>Highschool Year XI <span>25+ online</span></p>
+              </li>
+
+              <li class="right-page-content-panel">
+                <section class="right-page-content-group-image"></section>
+                <p>My Family 😘 <span>3+ online</span></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <i class="fa-solid fa-feather-pointed" id="write-message"></i>
+
+    <footer>
+
+    </footer>
+
+	<script src="index.js"></script>
+  </body>
+</html>
